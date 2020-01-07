@@ -57,7 +57,7 @@
   transform: rotate(45deg);
   width: calc(100% + 100px);
   left: -50px;
-  top: 65px;
+  top: 70px;
 }
 .cross-line.diagonalRight{
   transform: rotate(-45deg);

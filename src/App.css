@@ -1,16 +1,15 @@
 .app{
   height: calc(100vh - 40px);
   padding: 20px;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 .logo{
-  font-family: 'Bigelow Rules', cursive;
-  color: #00bb66;
-  font-size: 72px;
-  margin: 0px auto;
+  font-family: Bigelow Rules,cursive;
+  color: #0b6;
+  font-size: 52px;
+  margin: 30px auto;
   display: block;
   text-align: center;
   font-weight: 700;
@@ -23,5 +22,6 @@
   }
   .logo{
     font-size: 75px;
+    margin: 90px 0 0;
   }
 }

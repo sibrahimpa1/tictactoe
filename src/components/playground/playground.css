@@ -1,13 +1,13 @@
 .playground{
-  height: 60vh;
-  width: 50vw;
-  max-width: 700px;
+  height: 500px;
+  width: 500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   background: #0c0c0c;
   padding: 20px;
+  overflow: hidden;
 }
 .player{
   text-align: center;
@@ -43,8 +43,8 @@
 .restart{
   position: absolute;
   right: 20px;
-  bottom: 20px;
-  background: #5557bf;
+  top: 20px;
+  background: #12ad7c;
   border-radius: 4px;
   padding: 12px 30px;
   border: 0;
@@ -57,7 +57,7 @@
   transition: all .3s linear;
 }
 .restart:hover{
-  background: #7072d8;
+  background: #c74c4c;
 }
 .winner-true > .field{
   pointer-events: none;
@@ -72,9 +72,9 @@
     margin: 40px 0;
   }
   .restart{
-    padding: 20px 40px;
+    padding: 15px 32px;
     border: 0;
-    font-size: 21px;
+    font-size: 19px;
   }
   .winner{
     left: -30px;
