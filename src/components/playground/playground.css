@@ -1,0 +1,87 @@
+.playground{
+  height: 60vh;
+  width: 50vw;
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background: #0c0c0c;
+  padding: 20px;
+}
+.player{
+  text-align: center;
+  margin: 20px 0 0px;
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 53px;
+  font-weight: 100;
+}
+.player1{
+  color: #497fc3;
+}
+.player2{
+  color: #c18e17;
+}
+
+.winner{
+  position: absolute;
+  height: 90px;
+  line-height: 90px;
+  padding: 0 40px;
+  left: -150px;
+  text-align: center;
+  top: 40px;
+  width: 560px;
+  z-index: 200;
+  background:#00bb65;
+  color: white;
+  font-weight: 800;
+  font-size: 61px;
+  font-family: 'Bigelow Rules', cursive;
+  transform: rotate(-24deg);
+}
+.restart{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #5557bf;
+  border-radius: 4px;
+  padding: 12px 30px;
+  border: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  transition: all .3s linear;
+}
+.restart:hover{
+  background: #7072d8;
+}
+.winner-true > .field{
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 768px){
+  .playground{
+    width: 100%;
+    padding: 0;
+  }
+  .container {
+    margin: 40px 0;
+  }
+  .restart{
+    padding: 20px 40px;
+    border: 0;
+    font-size: 21px;
+  }
+  .winner{
+    left: -30px;
+    text-align: center;
+    bottom: 70px;
+    top: auto;
+    width: calc(100% + 40px);
+    position: fixed;
+  }
+}
